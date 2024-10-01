@@ -10,11 +10,11 @@ function App() {
   const [step, setStep] = useState(1)
 
   function handlePrevious() {
-    alert("we're on to the previous")
+    if(step > 1) setStep(step - 1)
   }
 
   function handleNext(){
-    alert("we're on to the next")
+    if(step < 3) setStep(step + 1);
   }
 
   return (
